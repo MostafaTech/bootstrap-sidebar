@@ -1,0 +1,122 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+.site-sidebar {
+    color: #ddd;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    display: none;
+    width: 0px;
+    transition: all 0.3s ease;
+    overflow-y: hidden;
+}
+.site-content {
+    transition: all 0.3s ease;
+    margin-top: 56px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 200px;
+}
+.sidebar-menu > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+.sidebar-menu > li > a > span.sidebar-menu-icon {
+    display: inline-block;
+    background-color: #555;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 3px;
+    font-size: 1.1em;
+}
+.sidebar-menu > li > a > span.sidebar-menu-detail {
+    transition: all 0.6s ease;
+    display: none;
+}
+
+.sidebar-toggle {
+    color: #fff !important;
+    margin-right: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar-enabled .site-sidebar {
+    display: block !important;
+    width: 200px !important;
+}
+.sidebar-enabled .sidebar-menu-detail {
+    display: inline-block !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sidebar-toggle {
+        display: none;
+    }
+    .site-sidebar {
+        display: block;
+        width: 56px;
+    }
+    .site-sidebar:hover {
+        width: 200px;
+    }
+    .site-sidebar:hover .sidebar-menu > li > a > span.sidebar-menu-detail {
+        display: inline-block;
+    }
+    .site-content {
+        margin-left: 56px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .site-sidebar {
+        display: block;
+        width: 56px;
+    }
+    .site-sidebar:hover {
+        width: 200px;
+    }
+    .site-content {
+        margin-left: 56px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .site-sidebar {
+        display: block;
+        width: 200px;
+    }
+    .sidebar-menu > li > a > span.sidebar-menu-detail {
+        display: inline-block;
+    }
+    .site-content {
+        margin-left: 200px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .site-sidebar {
+        width: 200px;
+    }
+    .site-content {
+        margin-left: 200px;
+    }
+}

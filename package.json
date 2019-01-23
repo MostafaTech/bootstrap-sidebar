@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-sidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "scss-compile": "node-sass --output-style expanded styles/main.scss dist/styles.css",
+    "scss-watch" :"node-sass --watch --recursive --output-style expanded styles/main.scss dist/styles.css",
+    "start": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostafaTech/bootstrap-sidebar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MostafaTech/bootstrap-sidebar/issues"
+  },
+  "homepage": "https://github.com/MostafaTech/bootstrap-sidebar#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

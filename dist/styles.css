@@ -1,0 +1,194 @@
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.sidebar-sidebar {
+  position: fixed;
+  left: 0;
+  top: 56px;
+  bottom: 0;
+  display: none;
+  width: 0px;
+  transition: all 0.3s ease;
+  overflow-y: hidden;
+}
+
+.sidebar-sidebar .sidebar-section {
+  border-top: 1px solid;
+  padding: 20px 15px;
+  width: 250px;
+}
+
+.sidebar-sidebar .sidebar-avatar .sidebar-avatar-img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.sidebar-sidebar .sidebar-avatar .sidebar-avatar-info {
+  display: none;
+}
+
+.sidebar-sidebar .sidebar-menu-heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  display: none;
+}
+
+.sidebar-sidebar .sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-sidebar .sidebar-menu > li > a {
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.sidebar-sidebar .sidebar-menu > li > a > .sidebar-menu-icon {
+  display: inline-block;
+  padding: 7px 0;
+  margin-right: 8px;
+  border-radius: 3px;
+  font-size: 1.4em;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.sidebar-sidebar .sidebar-menu > li > a > .sidebar-menu-detail {
+  transition: display 0.6s ease;
+  display: none;
+}
+
+.sidebar-enabled .sidebar-sidebar {
+  display: block !important;
+  width: 250px !important;
+}
+
+.sidebar-enabled .sidebar-avatar-info {
+  display: block !important;
+}
+
+.sidebar-enabled .sidebar-menu-heading {
+  display: block !important;
+}
+
+.sidebar-enabled .sidebar-menu-detail {
+  display: inline-block !important;
+}
+
+.sidebar-toggle {
+  color: #fff !important;
+  margin-right: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  transition: all 0.3s ease;
+  margin-top: 56px;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sidebar-sidebar {
+    display: block;
+    width: 70px;
+  }
+  .sidebar-sidebar:hover {
+    width: 250px;
+  }
+  .sidebar-sidebar:hover .sidebar-avatar-info,
+  .sidebar-sidebar:hover .sidebar-menu-heading {
+    display: block;
+  }
+  .sidebar-sidebar:hover .sidebar-menu-detail {
+    display: inline-block;
+  }
+  .sidebar-toggle {
+    display: none;
+  }
+  .sidebar-content {
+    margin-left: 70px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar-sidebar {
+    display: block;
+    width: 70px;
+  }
+  .sidebar-sidebar:hover {
+    width: 250px;
+  }
+  .sidebar-content {
+    margin-left: 70px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .sidebar-sidebar {
+    display: block;
+    width: 250px;
+  }
+  .sidebar-sidebar .sidebar-menu > li > a > span.sidebar-menu-detail {
+    display: inline-block;
+  }
+  .sidebar-sidebar .sidebar-avatar-info {
+    display: block !important;
+  }
+  .sidebar-sidebar .sidebar-menu-heading {
+    display: block !important;
+  }
+  .sidebar-content {
+    margin-left: 250px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sidebar-sidebar {
+    width: 250px;
+  }
+  .sidebar-content {
+    margin-left: 250px;
+  }
+}
+
+.sidebar-theme-default {
+  color: #818896;
+}
+
+.sidebar-theme-default .sidebar-sidebar {
+  background-color: #1e2229;
+}
+
+.sidebar-theme-default .sidebar-sidebar .sidebar-section {
+  border-color: #2e333c;
+}
+
+.sidebar-theme-default .sidebar-sidebar .sidebar-menu-heading {
+  color: #646e80;
+}
+
+.sidebar-theme-default .sidebar-sidebar a {
+  color: #818896;
+}
+
+.sidebar-theme-default .sidebar-sidebar a:hover {
+  color: #b8bfce;
+}
+
+.sidebar-theme-default .sidebar-sidebar .sidebar-menu-icon {
+  background-color: #2e333c;
+}

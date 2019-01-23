@@ -1,0 +1,28 @@
+
+.sidebar-theme-default {
+    color: #818896;
+
+    .sidebar-sidebar {
+        background-color: #1e2229;
+
+        .sidebar-section {
+            border-color: #2e333c;
+        }
+
+        .sidebar-menu-heading {
+            color: #646e80;
+        }
+
+        a {
+            color: #818896;
+
+            &:hover {
+                color: #b8bfce;
+            }
+        }
+
+        .sidebar-menu-icon {
+            background-color: #2e333c;
+        }
+    }
+}
